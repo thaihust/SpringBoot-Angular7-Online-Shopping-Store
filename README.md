@@ -71,7 +71,7 @@ You can build the image and run the container with Docker.
 1. Build backend project
 ```bash
 cd backend
-mvn package
+mvn -Dmaven.test.skip=true package
 ```
 2. Build fontend project
 ```bash
