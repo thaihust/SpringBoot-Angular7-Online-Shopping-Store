@@ -8,12 +8,12 @@ services:
   backend:
     build: backend/.
     ports: 
-      - "8080:8080"
+      - "8011:8080"
     depends_on:
       - db
   frontend:
     build: frontend/.
     ports: 
-      - "80:80"
+      - "8010:80"
     depends_on: 
       - backend
